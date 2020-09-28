@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+<div class="login-wrapper">
+  <section class="login-left-wrapper">
+    <div class="login-header">
+      <div>Sign in</div>
+    </div>
+    <div class="login-body">
+      <form>
+        <div id="login-id">
+          <input type="email" placeholder="Email address"  onblur="validateEmail(this)" onfocus="UnvalidateEmail()">
+        </div>
+        <div id="login-password-div">
+          <input type="password" placeholder="Password" id="login-password" onblur="validatePass(this)" onfocus="UnvalidatePass()">
+        </div>
+        <div class="other">
+          <a href="#">Forget Password?</a>
+          <div id="password-visiblity" class="password-hidden" onclick="visiblity()"></div>
+        </div>
+        <div class="submit"><input type="submit" value="Submit" id="login-submit"></div>
+
+      </form>
+    </div>
+    <div class="login-footer"></div>
+  </section>
+  <section class="login-right-wrapper">
+    <div class="overlay"></div>
+  </section>
+</div>
+<!--/**** Mobile view ***/ -->
+<section class="login-S">
+  <div class="login-header">
+    <div>Sign in</div>
+  </div>
+  <div class="login-body">
+    <form>
+      <div id="login-id">
+        <input type="email" placeholder="Email address" id="login-id" ontouchend="validateEmail(this)" ontouchstart="UnvalidateEmail()">
+      </div>
+      <div id="login-password-div">
+        <input type="password" placeholder="Password" id="login-password"  pattern=".{5,10}"  ontouchend="validatePass(this)" ontouchstart="UnvalidatePass()">
+      </div>
+      <div class="other-S">
+        <a href="#">Forget Password?</a>
+        <div class="submit-S"><input type="submit" value="Submit" id="login-submit"></div>
+      </div>
+    </form>
+  </div>
+</section>

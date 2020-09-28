@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    background: #ffaa33 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    overflow: hidden;
+    width: 45%;
+    border: 0 !important;
+    border-radius: 7px !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffd08e !important;
+}
+
+.logo {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65% !important;
+}
+
+.card-body {
+    padding: 2rem;
+    width: 100px !important;
+    background-color: #fff !important;
+}
+
+.title {
+    margin-bottom: 2rem;
+    color: #011628, 100%;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.form-input {
+    position: relative;
+    justify-content: center;
+}
+
+.form-input input {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+
+.form-input span {
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+    color: #ff9f1c;
+}
+
+.form-input input::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+    border: 1px solid #ff9f1c;
+}
+
+.form-input input:focus::placeholder {
+    color: #454b69;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #ff9f1c !important;
+    border: 0px;
+}
+
+.form-box button[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #ff9f1c;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+
+.form-box button[type="submit"]:hover {
+    background: #ff9f1c;
+}
